@@ -2,24 +2,26 @@
 {
 	public class Calculator
 	{
-		public static double Multiply(double num1, double num2)
+		public double value;
+
+		public void Multiply(double num)
 		{
-			return num1 * num2;
+			value *= num;
 		}
 
-		public static double Divide(double num1, double num2)
+		public void Divide(double num)
 		{
-			return num1 / num2;
+			value /= num;
 		}
 
-		public static double Add(double num1, double num2)
+		public void Add(double num)
 		{
-			return num1 + num2;
+			value += num;
 		}
 
-		public static double Subtract(double num1, double num2)
+		public void Subtract(double num)
 		{
-			return num1 - num2;
+			value -= num;
 		}
 	}
 }
