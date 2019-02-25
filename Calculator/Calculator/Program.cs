@@ -6,16 +6,16 @@ namespace Calculator
 	{
 		static void Main(string[] args)
 		{
-			var num1 = 1.5;
-			var num2 = 2.6;
+			var addVal = 1.5;
+			var mulVal = 2.6;
+			var divVal = 0.3;
+			var subVal = 3.2;
 
-			var calc = new Calculator {value = num1};
-			Console.WriteLine("Starting value is " + calc.value);
-
-			Console.WriteLine("Adding {0}, gives {1}", num2, calc.Add(num2));
-			Console.WriteLine("Multiplying by {0}, gives {1}", num2, calc.Multiply(num2));
-			Console.WriteLine("Subtracting {0}, gives {1}", num2, calc.Subtract(num2));
-			Console.WriteLine("Dividing by {0}, gives {1}", num2, calc.Divide(num2));
+			var calc = new Calculator();
+			Console.WriteLine("{0} + {1} * {2} - {3} / {4} = {5}",
+				calc.value, addVal, mulVal, subVal, divVal,
+				calc.Add(addVal).Multiply(mulVal).Subtract(subVal).Divide(divVal).value);
+			Console.WriteLine("(Left to Right, no operator precedence)\n");
 		}
 	}
 }

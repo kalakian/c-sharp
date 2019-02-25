@@ -4,32 +4,32 @@
 	{
 		public double value;
 
-		public double Multiply(double num)
+		public Calculator Multiply(double num)
 		{
 			value *= num;
 
-			return value;
+			return this;
 		}
 
-		public double Divide(double num)
+		public Calculator Divide(double num)
 		{
 			value /= num;
 
-			return value;
+			return this;
 		}
 
-		public double Add(double num)
+		public Calculator Add(double num)
 		{
 			value += num;
 
-			return value;
+			return this;
 		}
 
-		public double Subtract(double num)
+		public Calculator Subtract(double num)
 		{
 			value -= num;
 
-			return value;
+			return this;
 		}
 	}
 }
