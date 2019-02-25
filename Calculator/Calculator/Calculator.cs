@@ -4,24 +4,32 @@
 	{
 		public double value;
 
-		public void Multiply(double num)
+		public double Multiply(double num)
 		{
 			value *= num;
+
+			return value;
 		}
 
-		public void Divide(double num)
+		public double Divide(double num)
 		{
 			value /= num;
+
+			return value;
 		}
 
-		public void Add(double num)
+		public double Add(double num)
 		{
 			value += num;
+
+			return value;
 		}
 
-		public void Subtract(double num)
+		public double Subtract(double num)
 		{
 			value -= num;
+
+			return value;
 		}
 	}
 }
